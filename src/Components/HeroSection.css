@@ -1,0 +1,78 @@
+.section-hero{
+    background-image:linear-gradient(to right bottom, 
+    var(--color-sky-light),
+    var(--color-sky)), url('./images/hina_in_egypt.webp');
+    height: 100vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    font-family:   'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    position: relative;
+
+}
+@media (max-width:600px){
+    .section-hero{
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    }
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   
+} 
+.heading-primary{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1rem;
+    text-align: center;
+   
+}
+
+.hero-btns{
+    margin-top: 4rem;
+ 
+}
+.hero-btns .btn{
+    margin:.6rem
+}
+
+@media  (max-width:900px){
+    .hero-container > h1 {
+        font-size: 4rem;
+        margin-top: -15rem;
+    }
+    .btn{
+        display: inline-block;
+        font-size: 1.5rem;
+       
+        
+    }
+    
+}
+@media screen and (max-width:600px){
+    .hero-container > h1 {
+        font-size: 5rem;
+        margin-top:-10rem
+    }
+    .hero-container > p{
+        font-size: 3rem;
+    }
+    .btn{
+        display: inline-block;
+        
+    }
+    
+}
+.menu-bar{
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}

@@ -1,0 +1,125 @@
+
+.modal__container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color: rgba(0,0,0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-size: 2rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+   
+   
+   
+
+   
+    
+}
+.modal{
+    width: 50vw;
+    height: auto;
+    background: whitesmoke;
+    padding: 2rem;
+    box-shadow: 0 2rem 3rem rgba(0,0,0, .6);
+    border-radius: 5px;
+    z-index: 1500;
+    animation: fadeIn .3s;
+   
+
+    
+   
+    }
+    @keyframes fadeIn{
+        0%{
+            transform: scale(.3);
+        }
+       
+        100%{
+            transform: scale(1);
+
+        }
+    }
+@media (max-width:600px){
+    .modal{
+        width: 85vw;
+        font-size:2rem;
+    }
+
+
+}
+    .modal__header{
+        text-align: center;
+        position: relative;
+        padding-bottom: 2rem;
+
+    }
+
+    .modal__icon{
+        position: absolute;
+        top:0;
+        right: 0;
+        transition: all .3s
+    }
+    .modal__icon:hover{
+        transform: scale(1.2)
+    }
+    .form__group:not(:last-child){
+        margin-bottom: 3rem;
+    }
+    .form__input{
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        font-family: inherit;
+        border-radius:3px;
+        background-color: var(--color-white);
+        border:none;
+        border-bottom: 3px solid transparent;
+        display: block;
+        width: 90%;
+    }
+    @media (max-width:600px){
+        .form__input{
+            padding: 1.5rem 2rem;
+            font-size: inherit;
+        }
+       .form__group .btn--white{
+            font-size: 2rem;
+        }
+        }
+    .form__input:focus{
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(0,0,0, .4);
+        border-bottom: 3px solid var(--color-sky);
+
+    }
+    .form__input:focus:invalid{
+        border-bottom: 3px solid red;
+    }
+    .form__input::-webkit-input-placeholder{
+        color:var(--color-grey);
+ }
+ .form__label{
+     font-size: 1.5rem;
+     display: block;
+     margin-left: 2rem;
+     margin-top: 1.5rem;
+     color:var(--color-grey);
+     transition: all .2s;
+
+ }
+ .form__input:placeholder-shown + .form__label{
+     opacity: 0;
+     visibility: hidden;
+     transform: translateY(-5rem)
+
+ }
+
+
+   
+    
+
