@@ -1,6 +1,7 @@
 .services__container{
     background-image:linear-gradient(to right bottom, var(--color-sky-light), var(--color-sky));
     padding-bottom: 2rem;
+    margin:0
    
 
 }
