@@ -4,6 +4,7 @@ import  { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Components/Pages/Home';
 import Contact from './Components/Pages/Contact';
 import Services from './Components/Pages/Services';
+import Footer from './Components/Footer';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -26,6 +27,7 @@ function App() {
            <Route path='/contact' element={<Contact></Contact>} />
           
            </Routes>
+    <Footer/>
       </Router>
 
       
